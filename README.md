@@ -1,6 +1,6 @@
 # HTML to Slim plugin for Sublime Text 3
 
-Converts selection content from HTML or ERB to SLIM using http://html2slim.heroku.com API
+Converts selection content from HTML or ERB to SLIM using http://html2slim-json.herokuapp.com API
 
 ### Git installation
 
