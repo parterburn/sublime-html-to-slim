@@ -1,4 +1,5 @@
-import urllib.request
+import urllib
+import urllib2
 import json
 import sublime, sublime_plugin
 
@@ -19,16 +20,15 @@ class HtmlToSlimFromSelectionCommand(sublime_plugin.TextCommand):
 class HTHTools:
 	@classmethod
 	def post_html_return_slim(self, html):
-		host = 'http://html2slim-json.herokuapp.com/api.json'
-		attributes_style = settings.get("attributes_style", "default")
-		data = { 'page': {'html': html}, 'options': {attributes_style: 'true'} }
-		data_json = json.dumps(data)
-		data_json = data_json.encode('utf-8')
-		req = urllib.request.Request(host, data_json, {'content-type': 'application/json'})
-		response_stream = urllib.request.urlopen(req)
-		result = json.loads(response_stream.read().decode("utf-8"))
+		url = 'http://html2slim.raving.systems/html2slim.json'
+		data_json = {'source' : html }
+		data_json = data.encode('utf-8')
+		data = urllib.urlencode(data_json)
+		req = urllib2.Request(url, data_json)
+		response = urllib2.urlopen(req)
+		result = json.loads(response.read().decode("utf-8"))
 
-		if result["page"]:
-			return result["page"]["slim"]
+		if result['result']:
+			return result['result']
 		else:
 			return None

@@ -1,1 +1,0 @@
-{"dependencies": [], "sublime_text": ">=3000", "platforms": ["*"], "description": "Convert HTML/ERB to SLIM", "version": "1.0", "url": "http://html2slim-json.herokuapp.com"}
