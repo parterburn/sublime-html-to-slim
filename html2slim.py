@@ -3,7 +3,7 @@ import urllib2
 import json
 import sublime, sublime_plugin
 
-class HtmlToSlimFromSelectionCommand(sublime_plugin.TextCommand):
+class FromHtmlToSlimFromSelectionCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for region in self.view.sel():
 			if not region.empty():

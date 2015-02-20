@@ -6,7 +6,7 @@ Converts selection content from HTML to SLIM using http://html2slim.herokuapp.co
 
 Clone the repository in your Sublime Text "Packages" directory:
 
-    git clone https://github.com/parterburn/sublime-html-to-slim.git "HTML2Slim"
+    git clone https://github.com/parterburn/sublime-html-to-slim.git "HTML to Slim"
 
 The "Packages" directory is located at:
 
