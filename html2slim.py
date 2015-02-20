@@ -3,8 +3,6 @@ import urllib2
 import json
 import sublime, sublime_plugin
 
-settings = sublime.load_settings("html2slim.sublime-settings")
-
 class HtmlToSlimFromSelectionCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for region in self.view.sel():
