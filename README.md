@@ -1,6 +1,6 @@
-# HTML to slim plugin for Sublime Text 3
+# HTML to Slim plugin for Sublime Text 3
 
-Converts files, selection and clipboard content from HTML to slim using http://html2slim.raving.systems/html2slim.json API
+Converts files, selection and clipboard content from HTML to Slim using http://html2slim.raving.systems/html2slim.json API
 
 ## Installation
 
