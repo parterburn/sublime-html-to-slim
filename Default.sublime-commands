@@ -8,10 +8,6 @@
     "command": "html_to_slim_from_selection"
   },
   {
-    "caption": "HTML2Slim: Convert selection 2",
-    "command": "html_to_slim_from_other_selection"
-  },  
-  {
     "caption": "HTML2Slim: Convert clipboard content",
     "command": "html_to_slim_from_clipboard"
   }
