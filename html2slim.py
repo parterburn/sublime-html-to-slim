@@ -48,7 +48,7 @@ class HtmlToSlimFromClipboardCommand(sublime_plugin.TextCommand):
 class HTHTools:
 	@classmethod
 	def post_html_return_slim(self, html):
-		host = 'http://html2slim.raving.systems/html2slim.json'
+		host = 'http://html2slim.herokuapp.com/html2slim.json'
 		data = urllib.parse.urlencode({'source': html}).encode('utf-8')
 		req = urllib.request.Request(host, data, {})
 		response_stream = urllib.request.urlopen(req)
